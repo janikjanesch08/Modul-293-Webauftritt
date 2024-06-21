@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navigation">
+            <nav>
+                <h2><a href="Startseite.html#top"><img class="Logo" src="Logo2.png" /></a></h2>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul>
+                    <div class="textheader">
+                        <li><a href="Startseite.html#ueber-mich">Über mich</a></li>
+                        <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+                        <li><a href="Portrait.html">Portrait</a></li>
+                    </div>
+                    <li><a href="Kontakt.html" style="--clr:#5E9889"><span>Kontakt</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');ö
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2 class="kontakttext">Kontaktieren Sie mich</h2>
+                <div class="form-group">
+                    <input type="text" id="vorname" class="field" placeholder="Ihr Vorname...">
+                    <input type="text" id="nachname" class="field" placeholder="Ihr Nachname...">
+                </div>
+                <input type="email" id="email" class="field" placeholder="Ihre E-Mail Adresse..." required>
+                <textarea id="bemerkung" class="field" placeholder="Schreiben Sie Ihre Nachricht hier..."></textarea>
+                <button class="btn">Abschicken</button>
+                <a id="sendlink"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter Logo" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-center">
+            <p>Autor: Janik Janesch</p>
+        </div>
+        <div class="footer-right">
+            <p>Kontakt unter: <a href="mailto:janik.janesch@icloud.com">janik.janesch@icloud.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
