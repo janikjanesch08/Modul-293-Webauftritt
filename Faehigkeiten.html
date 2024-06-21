@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fähigkeiten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <nav>
+                <h2><a href="Startseite.html#top"><img class="Logo" src="Logo2.png" /></a></h2>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul>
+                    <div class="textheader">
+                        <li><a href="Startseite.html#ueber-mich">Über mich</a></li>
+                        <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+                        <li><a href="Portrait.html">Portrait</a></li>
+                    </div>
+                    <li><a href="Kontakt.html" style="--clr:#5E9889"><span>Kontakt</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <section class="section2" id="faehigkeiten">
+        <div class="content">
+            <h1>Fähigkeiten</h1>
+            <p>Als Informatiker im ersten Lehrjahr habe ich bereits einiges gelernt. Zurzeit besuche ich das Basislehrjahr, wo wir verschiedene Programmiersprachen kennengelernt haben. Darüber hinaus haben wir zahlreiche zusätzliche und hilfreiche Softwares für den Computer durchgenommen.</p>
+            <h2><br>Meine Fähigkeiten</h2>
+            <div class="skills">
+                <img src="c.png" alt="C" class="skill-icon">
+                <img src="html.png" alt="HTML" class="skill-icon">
+                <img src="css.png" alt="CSS" class="skill-icon">
+                <img src="js.png" alt="JavaScript" class="skill-icon">
+            </div>
+        </div>
+    </section>
+
+    <section class="section sectiontools" id="tools">
+        <div class="content">
+            <h2>Tools die ich benutze</h2>
+            <div class="tools">
+                <img src="vscode.png" alt="VSCode" class="tool-icon">
+                <img src="windows.png" alt="Windows" class="tool-icon">
+                <img src="openai.png" alt="OpenAI" class="tool-icon">
+                <img src="chrome.png" alt="Chrome" class="tool-icon">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter Logo" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-center">
+            <p>Autor: Janik Janesch</p>
+        </div>
+        <div class="footer-right">
+            <p>Kontakt unter: <a href="mailto:janik.janesch@icloud.com">janik.janesch@icloud.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
