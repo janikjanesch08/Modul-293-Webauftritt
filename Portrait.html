@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <nav>
+                <h2><a href="Startseite.html#top"><img class="Logo" src="Logo2.png" /></a></h2>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul>
+                    <div class="textheader">
+                        <li><a href="Startseite.html#ueber-mich">Über mich</a></li>
+                        <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+                        <li><a href="Portrait.html">Portrait</a></li>
+                    </div>
+                    <li><a href="Kontakt.html" style="--clr:#5E9889"><span>Kontakt</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <section class="section3" id="portfolio">
+        <div class="content2">
+            <h2 class="projektetitel">Meine Projekte</h2>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-image"><video src="Video.mp4" autoplay muted loop></video></div>
+                    <h2>HTML, CSS Webseite</h2>
+                    <p>Während meiner Tätigkeit im Betrieb habe ich eine Webseite mit HTML und CSS erstellt, 
+                        die sich auf den Verkauf von Häusern spezialisierte. Die Webseite umfasste eine Startseite, 
+                        auf der die wichtigsten Informationen präsentiert wurden, sowie eine Produktseite, 
+                        die verschiedene Immobilienangebote darstellte. Zudem beinhaltete sie ein Kontaktformular, 
+                        über das Interessenten einfach und schnell Anfragen stellen konnten.</p>
+                </div>
+                <div class="project">
+                    <div class="project-image"><img src="portrait_Bild2.png" alt="Projekt 2"></div>
+                    <h2>Sprachgesteuerte KI</h2>
+                    <p>In den letzten 2,5 Monaten habe ich eine eigene KI mit Sprachsteuerung entwickelt. 
+                        Diese KI akzeptiert ausschließlich mündliche Eingaben und gibt die Ergebnisse sowohl mündlich 
+                        als auch in Textform aus. Durch diese innovative Technologie wird die Interaktion mit Computern und Geräten noch intuitiver und benutzerfreundlicher gestaltet.</p>
+                </div>
+                <div class="project">
+                    <div class="project-image"><img src="portrait_Bild3.png" alt="Projekt 3"></div>
+                    <h2>Ämtliplan</h2>
+                    <p>Als ich im Betrieb das Thema Java durchgenommen habe, erstellte ich einen eigenen Ämtliplan. 
+                        Dieser ermöglicht das Erfassen, Ausgeben, Erledigen und Löschen von Aufgaben. Mit meiner Java-Kenntnis konnte ich effektive Tools für die Organisation entwickeln.</p>
+                </div>
+                <div class="project">
+                    <div class="project-image"><img src="portrait_Bild4.png" alt="Projekt 4"></div>
+                    <h2>Casino</h2>
+                    <p>Mit Java habe ich mein eigenes funktionierendes Casino entwickelt, 
+                        das Roulette und einarmige Banditen bietet. Spieler können eigene Benutzer erstellen, 
+                        Guthaben hinzufügen und die oben genannten Spiele genießen. Ein spannendes Unterfangen, 
+                        das meine Programmierfähigkeiten herausgefordert hat!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter Logo" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-center">
+            <p>Autor: Janik Janesch</p>
+        </div>
+        <div class="footer-right">
+            <p>Kontakt unter: <a href="mailto:janik.janesch@icloud.com">janik.janesch@icloud.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
