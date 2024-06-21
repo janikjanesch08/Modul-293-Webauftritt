@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <nav>
+                <h2><a href="Startseite.html#top"><img class="Logo" src="Logo2.png" /></a></h2>
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul>
+                    <div class="textheader">
+                        <li><a href="Startseite.html#ueber-mich">Über mich</a></li>
+                        <li><a href="Faehigkeiten.html">Fähigkeiten</a></li>
+                        <li><a href="Portrait.html">Portrait</a></li>
+                    </div>
+                    <li><a href="Kontakt.html" style="--clr:#5E9889"><span>Kontakt</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <div class="hintergrundbild" id="top">
+        <h1 class="starttext">Mein Name ist Janik Janesch <br>Lernender Informatiker</h1>
+    </div>
+
+    <a href="#ueber-mich">
+        <button class="uebermich">
+            <h3>Über mich</h3>
+        </button>
+    </a>
+
+    <div class="section-container">
+        <div class="text-content" id="ueber-mich">
+            <h1>Über mich <br></h1>
+            <p>
+                Mein Name ist Janik Janesch, ich bin 15 Jahre alt und wohne in Mörschwil, Schweiz.
+                Zurzeit absolviere ich eine Lehre bei der Innosolv AG als Informatiker in der Fachrichtung
+                Applikationsentwicklung.
+                Ich befinde mich im ersten Lehrjahr und habe großes Interesse an Informatik und Technik.
+                Mein Geburtstag ist am 3. September 2008. In meiner Freizeit spiele ich gerne Unihockey.
+                Die Ausbildung bei der Innosolv AG bietet mir die perfekte Gelegenheit,
+                meine Fähigkeiten in der Softwareentwicklung weiterzuentwickeln und praktische Erfahrungen in der
+                IT-Branche zu sammeln. <br> <br> <br>
+            </p>
+            <h2>Meine Hobbys: </h2>
+            <p> <br>- Unihockey <br> - Lesen <br> - Gaming</p>
+        </div>
+        <img class="image-content" src="Janik.JPG" alt="Bild von Janik Janesch">
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter.png" alt="Twitter Logo" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-center">
+            <p>Autor: Janik Janesch</p>
+        </div>
+        <div class="footer-right">
+            <p>Kontakt unter: <a href="mailto:janik.janesch@icloud.com">janik.janesch@icloud.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
